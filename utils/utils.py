@@ -1641,7 +1641,7 @@ async def check_changes():
                     await db.edit_config(var, current_value)
                     await db.edit_default(var, current_value)         
     
-    async def is_audio(file):
+async def is_audio(file):
     ffprobe_cmd = [
         "ffprobe",
         "-i", file,
