@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: abhi66
+    name: arjvps_vc
     env: python
     plan: free
 
@@ -9,28 +9,28 @@ services:
 
     envVars:
       - key: API_ID
-        sync: false
+        sync: 1701859
 
       - key: API_HASH
-        sync: false
+        sync: "ebd582392a6d32290c7155925bee6d32"
 
       - key: BOT_TOKEN
-        sync: false
+        sync: "8233014670:AAF57jgFsbxioqjPSlOz9LFfyQYOpLTad20"
 
-      - key: MONGO_DB_URI
-        sync: false
+      - key: DATABASE_URI
+        value: "mongodb+srv://kurukshethrathepride_db_user:D7fBdPjjDLnjqkdr@kurukshethra.5m7kbnw.mongodb.net"
 
-      - key: OWNER_ID
-        sync: false
+      - key: CHAT
+        value: "-1003744652244"
 
-      - key: LOGGER_ID
-        sync: false
+      - key: STARTUP_STREAM
+        value: "https://www.youtube.com/live/72ngeza9aKA?si=F3Xzcrmsog93NCE9"
 
       - key: STRING_SESSION
-        sync: false
+        sync: "BQAZ9-MAKywsxkebBLFSmEQCkL0UCHZaBQwuQ9eE9wi8GRyyIKOR4MMBgAcvKBgR84ZPTGJDaxcnrqAB1Gm5xZebEn158h2YLe7lASRenSK4VOWt0X8AIr7-W5XP3r-8cf3Y-UHp7Od6pDR_ymMoFhqxVDxZvUbULca5pP17UeDoXLFprav0I5enLedP3kKjVP7A39Om_aIfbdJYNb7W-IV7OzOTe_QRndJCsJy56YUPESWANIso2C3oIwmc9r9gQcigoAQeO9oAyAlQBgbs_PxsKdLzXBKIfj144xuVPL8MQPiCX-hAHhI4V1Xq7vOA369y940tKivs8ffji63SWO5b-wH8UQAAAAIU3IjBAA"
 
       - key: PYTHON_VERSION
-        value: 3.11.4
+        value: 3.9
      
       - key: PORT
         value: "10000"
