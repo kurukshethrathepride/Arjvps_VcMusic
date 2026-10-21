@@ -7,6 +7,10 @@ Telegram bot to stream videos in telegram Voice Chat for both groups and channel
 ![GitHub contributors](https://img.shields.io/github/contributors/Akshat7678/Arjvps_VcMusic?style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/Akshat7678/Arjvps_VcMusic?style=flat)
 
+
+[![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/deploy?repo=https://github.com/kurukshethrathepride/Arjvps_VcMusic)
+
+
 ## Config Vars:
 ### Mandatory Vars
 1. `API_ID` : Get From [my.telegram.org](https://my.telegram.org/)
