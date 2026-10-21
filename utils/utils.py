@@ -1642,24 +1642,38 @@ async def check_changes():
                     await db.edit_default(var, current_value)         
     
     async def is_audio(file):
-    have_audio=True
-    ffprobe_cmd = ["ffprobe", "-i", file, "-v", "quiet", "-of", "json", "-show_streams"]
+    ffprobe_cmd = [
+        "ffprobe",
+        "-i", file,
+        "-v", "quiet",
+        "-of", "json",
+        "-show_streams",
+    ]
+
     process = await asyncio.create_subprocess_exec(
-            *ffprobe_cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
-        )
-    output = await process.communicate()
-    stream = output[0].decode('utf-8')
-    out = json.loads(stream)
-    l = out.get("streams")
-    if not l:
-        return have_audio
-    for n in l:
-        k = n.get("codec_type")
-        if k:
-            if k == "audio":
-                have_audio =True
-                break
-    return have_audio
+        *ffprobe_cmd,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE,
+    )
+
+    output, _ = await process.communicate()
+
+    try:
+        data = json.loads(output.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        LOGGER.error(f"Unable to inspect audio stream: {exc}")
+        return False
+
+    streams = data.get("streams", [])
+
+    if not streams:
+        return False
+
+    for stream in streams:
+        if stream.get("codec_type") == "audio":
+            return True
+
+    return False
     
 
 async def get_height_and_width(file):
