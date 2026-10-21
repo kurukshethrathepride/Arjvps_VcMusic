@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 set -e
 
@@ -5,6 +6,9 @@ REPO_URL="https://github.com/kurukshethrathepride/Arjvps_VcMusic"
 APP_DIR="/tmp/Arjvps_VcMusic"
 
 echo "Cloning Repo...."
+
+# Remove the previous clone to prevent directory conflicts
+rm -rf "$APP_DIR"
 
 if [ -z "${BRANCH:-}" ]; then
   echo "Cloning main branch...."
