@@ -9,13 +9,13 @@ services:
 
     envVars:
       - key: API_ID
-        sync: 1701859
+        value: 1701859
 
       - key: API_HASH
-        sync: "ebd582392a6d32290c7155925bee6d32"
+        value: "ebd582392a6d32290c7155925bee6d32"
 
       - key: BOT_TOKEN
-        sync: "8233014670:AAF57jgFsbxioqjPSlOz9LFfyQYOpLTad20"
+        value: "8233014670:AAF57jgFsbxioqjPSlOz9LFfyQYOpLTad20"
 
       - key: DATABASE_URI
         value: "mongodb+srv://kurukshethrathepride_db_user:D7fBdPjjDLnjqkdr@kurukshethra.5m7kbnw.mongodb.net"
@@ -27,7 +27,7 @@ services:
         value: "https://www.youtube.com/live/72ngeza9aKA?si=F3Xzcrmsog93NCE9"
 
       - key: STRING_SESSION
-        sync: "BQAZ9-MAKywsxkebBLFSmEQCkL0UCHZaBQwuQ9eE9wi8GRyyIKOR4MMBgAcvKBgR84ZPTGJDaxcnrqAB1Gm5xZebEn158h2YLe7lASRenSK4VOWt0X8AIr7-W5XP3r-8cf3Y-UHp7Od6pDR_ymMoFhqxVDxZvUbULca5pP17UeDoXLFprav0I5enLedP3kKjVP7A39Om_aIfbdJYNb7W-IV7OzOTe_QRndJCsJy56YUPESWANIso2C3oIwmc9r9gQcigoAQeO9oAyAlQBgbs_PxsKdLzXBKIfj144xuVPL8MQPiCX-hAHhI4V1Xq7vOA369y940tKivs8ffji63SWO5b-wH8UQAAAAIU3IjBAA"
+        value: "BQAZ9-MAKywsxkebBLFSmEQCkL0UCHZaBQwuQ9eE9wi8GRyyIKOR4MMBgAcvKBgR84ZPTGJDaxcnrqAB1Gm5xZebEn158h2YLe7lASRenSK4VOWt0X8AIr7-W5XP3r-8cf3Y-UHp7Od6pDR_ymMoFhqxVDxZvUbULca5pP17UeDoXLFprav0I5enLedP3kKjVP7A39Om_aIfbdJYNb7W-IV7OzOTe_QRndJCsJy56YUPESWANIso2C3oIwmc9r9gQcigoAQeO9oAyAlQBgbs_PxsKdLzXBKIfj144xuVPL8MQPiCX-hAHhI4V1Xq7vOA369y940tKivs8ffji63SWO5b-wH8UQAAAAIU3IjBAA"
 
       - key: PYTHON_VERSION
         value: 3.9
